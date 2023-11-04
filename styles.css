@@ -1,0 +1,78 @@
+
+body {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #121212; /* Dark background for the body */
+  color: #e0e0e0; /* Light text for contrast */
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+/* Google Material Design aspects with dark theme adjustments */
+input[type=text], select, button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #333; /* Darker borders for inputs */
+  border-radius: 4px;
+  background-color: #1e1e1e; /* Darker background for inputs */
+  color: #fff; /* White text for inputs */
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  background-color: #4CAF50; /* Keep the green button color */
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049; /* A slightly darker green on hover */
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #1e1e1e; /* Darker background for container */
+  padding: 20px;
+}
+
+.header h1 {
+  color: #4CAF50; /* Keep the green color for the header */
+}
+
+/* Enhancing the form input focus for dark theme */
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+/* Update to dark theme for dropdowns for consistency */
+select {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+/* Update placeholder text color for better visibility */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #b3b3b3;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #b3b3b3;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #b3b3b3;
+}

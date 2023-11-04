@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Direct Download Search Engine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="download, movies, games, music, softwares, epub, ebooks, pdf, mp3, songs, direct download">
+    <meta name="description" content="Find direct download links for almost anything. TV Series, Movies, Books, music, software, games, and more. Take advantage of powerful advanced search.">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header text-center">
+        <h1>DirectFetch | Search Engine</h1>
+        <p>Get direct download links for almost anything.</p>
+    </div>
+
+    <div class="row justify-content-md-center">
+        <div class="col-md-8">
+            <form id="searchForm" onsubmit="event.preventDefault(); startSearch();">
+                <div class="form-group">
+                    <label for="fileTypeDropdown">Choose Filetype:</label>
+                    <select id="fileTypeDropdown" class="form-control">
+                        <option value="all">All</option>
+                        <option value="video">TV/Movies/Video</option>
+                        <option value="ebook">Books</option>
+                        <option value="audio">Music</option>
+                        <option value="archive">Software/ISO/DMG/Games</option>
+                        <option value="picture">Images</option>
+                    <option value="apk">Android APKs</option>
+</select>
+                </div>
+                <div class="form-group">
+                    <label for="engineDropdown">Choose Search Engine:</label>
+                    <select id="engineDropdown" class="form-control">
+                        <option value="google">Google</option>
+                        <option value="googol">Googol</option>
+                        <option value="startpage">Startpage</option>
+                        <option value="searx">Searx</option>
+                        <option value="filepursuit">FilePursuit</option>
+                    <option value="duckduckgo">DuckDuckGo</option>
+<option value="bing">Bing</option>
+<option value="yahoo">Yahoo</option></select>
+                </div>
+                <div class="form-group">
+                    <label for="searchQuery">Search Query:</label>
+                    <input type="text" id="searchQuery" class="form-control" placeholder="Enter your search terms">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Search</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.9/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="./index.js"></script>
+
+
+</body>
+</html>
